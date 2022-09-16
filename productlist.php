@@ -29,9 +29,9 @@ if(isset($_GET['success'])){
                         <tr>
                             <th>Product Id</th>
                             <th >Product name</th>
-                            <th >price</th>
-                            <th >quantity</th>
-                            <th>Registration date</th>
+                            <th >price@</th>
+                            <th >quantity(pack)</th>
+                            <th>Expiry date</th>
                         </tr>
                     </thead>
                     <tbody>

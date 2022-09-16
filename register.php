@@ -17,7 +17,9 @@ if($availble>0){
  header("location:config.php");
 }
 // the login section
-}if(isset($_POST['login'])){
+}
+
+if(isset($_POST['login'])){
     $username = mysqli_real_escape_string($conn, $_POST['username']);
     $userpassword = mysqli_real_escape_string($conn, $_POST['userpassword']);
     $sql1 = mysqli_query($conn, "select *from login where username='$username' and password='$userpassword'");
@@ -40,6 +42,8 @@ if($availble>0){
     exit();
    }
 }
+
+
 // Registering products section
 if(isset($_POST['Register'])){
     $productname = mysqli_real_escape_string($conn, $_POST['productname']);
